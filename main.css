@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+body{
+    text-align: center;
+}
+h1{
+}
+.center{
+}
+.f1{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+.jumbotron{
+    background-color:black !important;
+    color: white !important;
+    background-size: cover !important;
+    padding:250px 0 350px 0 !important;
+}
+.navbar{
+    margin: 0 !important;
+}
