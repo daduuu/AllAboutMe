@@ -12,33 +12,53 @@ h1{
 
 }
 .jumbotron1{
-    background-color:black !important;
+    background-color:transparent !important;
+    background-image: url("./img/wooddark.jpg") !important;
     color: white !important;
     background-size: cover !important;
     padding:250px 0 350px 0 !important;
+    margin: 0 !important;
 }
 .navbar{
     margin: 0 !important;
     border-radius: 0 !important;
 }
 .jumbotron2{
-    background-color:white !important;
+    background-color:transparent !important;
+    background-image: url("./img/marble.png") !important;
     color: black !important;
     background-size: cover !important;
-    padding:50px 0 250px 0 !important;
+    padding:50px 0 225px 0 !important;
+    margin: 0 !important;
 }
 .divspace{
     padding: 10px 0 100px 0;
 }
 .jumbotron3{
-    background-color:black !important;
+    background-color:transparent !important;
+    background-image: url("./img/leather.jpg");
     color: white !important;
     background-size: cover !important;
     padding:50px 0 250px 0 !important;
+    margin: 0 !important;
 }
 .jumbotron4{
-    background-color:white !important;
+    background-color:transparent !important;
+    background-image: url("./img/silk.jpg");
     color: black !important;
     background-size: cover !important;
     padding:50px 0 250px 0 !important;
+    margin: 0 !important;
+}
+.sec1{
+    margin: 0;
+}
+.sec2{
+    margin: 0;
+}
+.sec3{
+    margin: 0;
+}
+.sec4{
+    margin: 0;
 }
