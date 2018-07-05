@@ -30,8 +30,8 @@ $(document).ready(function(){
     (function($) {
         $.fn.goTo = function() {
             $('html, body').animate({
-                scrollTop: ( $(this).offset().top - 30) + 'px'
-            }, 'slow');
+                scrollTop: ( $(this).offset().top - 40) + 'px'
+            }, 1000);
             return this;
         }
     })(jQuery);
