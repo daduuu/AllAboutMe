@@ -20,6 +20,12 @@ h1{
     padding:250px 0 350px 0 !important;
     margin: 0 !important;
 }
+.projects{
+    font-size: 20px;
+}
+.hp{
+    font-size: 55px;
+}
 .navbar{
     margin: 0 !important;
     border-radius: 0 !important;
