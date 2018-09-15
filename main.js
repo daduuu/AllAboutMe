@@ -8,12 +8,22 @@ $(document).ready(function() {
         var hash = this.hash;
 
         // animate
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - 55
-        }, 1000, function () {
+        if($(window).width() <= 768){
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 220
+            }, 1000, function () {
 
-            window.location.hash = hash - 55;
-        });
+                window.location.hash = hash - 220;
+            });
+        }
+        else {
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 50
+            }, 1000, function () {
+
+                window.location.hash = hash - 50;
+            });
+        }
 
 });
 
