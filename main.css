@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 body{
     text-align: center;
+    position: relative;
 }
 h1{
 }
@@ -22,6 +23,9 @@ h1{
 .navbar{
     margin: 0 !important;
     border-radius: 0 !important;
+}
+.bg-color{
+    background-color: black;
 }
 .jumbotron2{
     background-color:transparent !important;

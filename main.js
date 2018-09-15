@@ -1,5 +1,37 @@
-$(document).ready(function(){
-    $(this).scrollTop(0);
+$(document).ready(function() {
+
+    $("#nav1 ul li a[href^='#']").on('click', function (e) {
+
+        e.preventDefault();
+
+        // store hash
+        var hash = this.hash;
+
+        // animate
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - 50
+        }, 1000, function () {
+
+            window.location.hash = hash - 50;
+        });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*$(this).scrollTop(0);
     var scrolltimer, scrolltimer2;
     window.addEventListener('scroll', function(){
         clearTimeout(scrolltimer);
@@ -30,8 +62,8 @@ $(document).ready(function(){
     (function($) {
         $.fn.goTo = function() {
             $('html, body').animate({
-                scrollTop: ( $(this).offset().top - 40) + 'px'
-            }, 1000);
+                scrollTop: ( $(this).offset().top - 30) + 'px'
+            }, 2000);
             return this;
         }
     })(jQuery);
@@ -40,5 +72,5 @@ $(document).ready(function(){
         e.preventDefault();
         var target = $(this).attr('href');
         $(target).goTo();
-    });
+    });*/
 });
