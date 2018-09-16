@@ -1,12 +1,19 @@
 $(document).ready(function() {
     window.addEventListener('resize', setHeight);
-
+    $('#c1').on('slide.bs.carousel', setHeight);
+    var hs = [];
     function setHeight(){
         if ($(window).width() <= 1150) {
             var h = $(".img1").css("height");
+            if(h === "0px"){
+                h = hs[hs.length - 1];
+                hs.splice(0, hs.length - 1);
+            }
             $(".carousel").css("height", "auto");
             $(".img1").css("height", "auto");
             $(".img2").css("height", h);
+            hs.push(h);
+
         }
         else{
             $(".carousel").css("height", 730);
