@@ -21,6 +21,10 @@ h1{
     padding:250px 0 350px 0 !important;
     margin: 0 !important;
 }
+.link{
+    width: 15px;
+    height: 15px;
+}
 .projects{
     font-size: 20px;
 }
