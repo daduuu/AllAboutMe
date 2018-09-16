@@ -3,9 +3,6 @@ $(document).ready(function() {
     $('#c1').on('slide.bs.carousel', setHeight);
     $('.nav-link').on('click', recall_menu);
 
-    if($(window).width() <= 768){
-        setHeight();
-    }
 
     var hs = [];
     function setHeight(){
@@ -35,6 +32,10 @@ $(document).ready(function() {
             $("h2").css("font-size", "2em");
             $(".carousel").css("padding-top", 50);
         }
+    }
+
+    if($(window).width() <= 768){
+        setHeight();
     }
 
     function recall_menu(){
