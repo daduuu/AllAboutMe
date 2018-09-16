@@ -1,14 +1,10 @@
 $(document).ready(function() {
     window.addEventListener('resize', setHeight);
-    if($(window).width() <= 1150){
-        $('#c1').on('slide.bs.carousel', setHeight);
-    }
-    else{
-        $('#c1').unbind('click');
-    }
+    $('#c1').on('slide.bs.carousel', setHeight);
+
     var hs = [];
     function setHeight(){
-        if ($(window).width() <= 1150) {
+        if ($(window).width() <= 1200) {
             var h = $(".img1").css("height");
             if(h === "0px"){
                 h = hs[hs.length - 1];
@@ -17,12 +13,11 @@ $(document).ready(function() {
             $(".carousel").css("height", "auto");
             $(".img1").css("height", "auto");
             $(".img2").css("height", h);
-            hs.push(h);
             $("h1").css("font-size", 25);
             $(".f1").css("font-size", 14);
             $(".projects").css("font-size", 12);
             $("h2").css("font-size", 20);
-            $(".carousel").css("padding-top", 50);
+            hs.push(h);
 
         }
         else{
