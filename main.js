@@ -3,12 +3,14 @@ $(document).ready(function() {
 
     function setHeight(){
         if ($(window).width() <= 1150) {
-            var h = $(".carousel").css("height");
-           $(".carousel").css("height", "auto");
+            var h = $(".img1").css("height");
+            $(".carousel").css("height", "auto");
+            $(".img1").css("height", "auto");
             $(".img2").css("height", h);
         }
         else{
             $(".carousel").css("height", 730);
+            $(".img1").css("height", 730);
             $(".img2").css("height", 730);
         }
     }
