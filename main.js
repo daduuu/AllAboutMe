@@ -22,6 +22,7 @@ $(document).ready(function() {
             $(".f1").css("font-size", 14);
             $(".projects").css("font-size", 12);
             $("h2").css("font-size", 20);
+            $(".carousel").css("padding-top", 50);
 
         }
         else{
@@ -32,6 +33,7 @@ $(document).ready(function() {
             $(".f1").css("font-size", 28);
             $(".projects").css("font-size", 20);
             $("h2").css("font-size", "2em");
+            $(".carousel").css("padding-top", 50);
         }
     }
 
