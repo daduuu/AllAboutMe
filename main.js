@@ -1,6 +1,7 @@
 $(document).ready(function() {
     window.addEventListener('resize', setHeight);
     $('#c1').on('slide.bs.carousel', setHeight);
+    $('.nav-link').on('click', recall_menu);
 
     var hs = [];
     function setHeight(){
@@ -29,6 +30,12 @@ $(document).ready(function() {
             $(".projects").css("font-size", 20);
             $("h2").css("font-size", "2em");
             $(".carousel").css("padding-top", 50);
+        }
+    }
+
+    function recall_menu(){
+        if($(window).width() <= 768){
+            $(".navbar-toggler").click();
         }
     }
 
