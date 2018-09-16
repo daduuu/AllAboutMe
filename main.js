@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    window.addEventListener('resize', setHeight);
+
+    function setHeight(){
+        if ($(window).width() <= 1150) {
+            var h = $(".carousel").css("height");
+           $(".carousel").css("height", "auto");
+            $(".img2").css("height", h);
+        }
+        else{
+            $(".carousel").css("height", 730);
+            $(".img2").css("height", 730);
+        }
+    }
 
     $("#nav1 ul li a[href^='#']").on('click', function (e) {
 
@@ -24,7 +37,6 @@ $(document).ready(function() {
                 window.location.hash = hash - 50;
             });
         }
-
 });
 
 
