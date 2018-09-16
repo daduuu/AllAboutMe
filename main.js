@@ -3,6 +3,10 @@ $(document).ready(function() {
     $('#c1').on('slide.bs.carousel', setHeight);
     $('.nav-link').on('click', recall_menu);
 
+    if($(window).width() <= 768){
+        setHeight();
+    }
+
     var hs = [];
     function setHeight(){
         if ($(window).width() <= 1200) {
