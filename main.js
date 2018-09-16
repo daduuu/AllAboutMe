@@ -19,7 +19,7 @@ $(document).ready(function() {
         else {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top - 50
-            }, 1000, function () {
+            }, 600, function () {
 
                 window.location.hash = hash - 50;
             });
