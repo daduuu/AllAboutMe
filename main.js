@@ -16,7 +16,8 @@ $(document).ready(function() {
             $(".img1").css("height", "auto");
             $(".img2").css("height", h);
             $("h1").css("font-size", 25);
-            $(".f1").css("font-size", 14);
+            $(".f1").css("font-size", 15);
+            $(".f2").css("font-size", 14);
             $(".projects").css("font-size", 12);
             $("h2").css("font-size", 20);
             hs.push(h);
@@ -26,8 +27,10 @@ $(document).ready(function() {
             $(".carousel").css("height", 730);
             $(".img1").css("height", 730);
             $(".img2").css("height", 730);
-            $("h1").css("font-size", 55);
-            $(".f1").css("font-size", 28);
+            $(".hp").css("font-size", 60);
+            $(".hp1").css("font-size", "2.5em");
+            $(".f1").css("font-size", 32);
+            $(".f2").css("font-size", 28);
             $(".projects").css("font-size", 20);
             $("h2").css("font-size", "2em");
             $(".carousel").css("padding-top", 50);

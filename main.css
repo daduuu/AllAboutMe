@@ -26,19 +26,36 @@ h1{
 }
 .f1{
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
 
 }
-.jumbotron{
+.f2{
+    text-align: center;
+    font-size: 28px;
+}
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.jp1{
     max-width: 100%;
     height: auto;
+    opacity: 1;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .jumbotron1{
+    background-size:auto!important;
+    background-repeat:no-repeat;
+    background-position: center top;
     background-color:transparent !important;
-    background-image: url("./img/wooddark.jpg") !important;
     color: white !important;
-    background-size: cover !important;
-    padding:250px 0 350px 0 !important;
+    padding: 50px 0 0 0 !important;
     margin: 0 !important;
 }
 .link{
@@ -49,7 +66,10 @@ h1{
     font-size: 20px;
 }
 .hp{
-    font-size: 55px;
+    font-size: 60px;
+}
+.hp1{
+    font-size: 2.5em;
 }
 .navbar{
     margin: 0 !important;
@@ -85,10 +105,12 @@ h1{
     position:relative;
 }
 .jumbotron2{
+    max-width: 100%;
+    height: auto;
     background-color:transparent !important;
+    background-size: cover; !important;
     background-image: url("./img/marble.png") !important;
     color: black !important;
-    background-size: cover !important;
     padding:50px 0 225px 0 !important;
     margin: 0 !important;
 }
@@ -96,13 +118,18 @@ h1{
     padding: 10px 0 100px 0;
 }
 .jumbotron3{
-    background-color:black !important;
+    max-width: 100%;
+    height: auto;
+    background-color:transparent !important;
+    background-image: url("./img/wooddark.jpg") !important;
     color: white !important;
     background-size: cover !important;
     padding:50px 0 280px 0 !important;
     margin: 0 !important;
 }
 .jumbotron4{
+    max-width: 100%;
+    height: auto;
     background-color:white !important;
     color: black !important;
     background-size: cover !important;
