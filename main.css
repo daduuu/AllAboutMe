@@ -7,6 +7,7 @@ body{
 h1{
     padding-top: 50px;
 }
+/*
 .carousel{
     max-width: 100%;
     height: 730px;
@@ -20,12 +21,17 @@ h1{
     max-width: 100%;
     height: 730px;
 }
+*/
 .center{
 }
 .f1{
     text-align: center;
     font-size: 28px;
 
+}
+.jumbotron{
+    max-width: 100%;
+    height: auto;
 }
 .jumbotron1{
     background-color:transparent !important;
