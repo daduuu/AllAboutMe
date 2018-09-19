@@ -107,9 +107,8 @@ h1{
 .jumbotron2{
     max-width: 100%;
     height: auto;
-    background-color:transparent !important;
     background-size: cover; !important;
-    background-image: url("./img/marble.png") !important;
+    background: transparent url("./img/wb2.png") !important;
     color: black !important;
     padding:50px 0 225px 0 !important;
     margin: 0 !important;
@@ -120,8 +119,7 @@ h1{
 .jumbotron3{
     max-width: 100%;
     height: auto;
-    background-color:transparent !important;
-    background-image: url("./img/wooddark.jpg") !important;
+    background: transparent url("./img/wooddark.jpg") !important;
     color: white !important;
     background-size: cover !important;
     padding:50px 0 280px 0 !important;
