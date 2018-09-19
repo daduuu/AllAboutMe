@@ -1,29 +1,38 @@
 $(document).ready(function() {
     window.addEventListener('resize', setHeight);
-    $('#c1').on('slide.bs.carousel', setHeight);
+    //$('#c1').on('slide.bs.carousel', setHeight);
     $('.nav-link').on('click', recall_menu);
 
 
     var hs = [];
     function setHeight(){
+        var x = 32;
         if ($(window).width() <= 1200) {
             var h = $(".img1").css("height");
             if(h === "0px"){
                 h = hs[hs.length - 1];
                 hs.splice(0, hs.length - 1);
             }
+
+            x -= (1200 - $(window).width()) * (17 / 789);
+
+            if ($(window).width() === 1200){
+                x = 32;
+            }
+
             $(".carousel").css("height", "auto");
             $(".img1").css("height", "auto");
             $(".img2").css("height", h);
-            $("h1").css("font-size", 25);
-            $(".f1").css("font-size", 15);
-            $(".f2").css("font-size", 14);
-            $(".projects").css("font-size", 12);
-            $("h2").css("font-size", 20);
+            $("h1").css("font-size", x + 10);
+            $(".f1").css("font-size", x);
+            $(".f2").css("font-size", x - 1);
+            $(".projects").css("font-size", x - 3);
+            $("h2").css("font-size", x + 5);
             hs.push(h);
 
         }
         else{
+
             $(".carousel").css("height", 730);
             $(".img1").css("height", 730);
             $(".img2").css("height", 730);
@@ -35,10 +44,6 @@ $(document).ready(function() {
             $("h2").css("font-size", "2em");
             $(".carousel").css("padding-top", 50);
         }
-    }
-
-    if($(window).width() <= 768){
-        setHeight();
     }
 
     function recall_menu(){
