@@ -49,6 +49,16 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.centered_down {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#down_arrow{
+    width: 75px;
+    height: 75px;
+}
 .jumbotron1{
     background-size:auto!important;
     background-repeat:no-repeat;
