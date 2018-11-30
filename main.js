@@ -7,6 +7,7 @@ $(document).ready(function() {
     var hs = [];
     function setHeight(){
         var x = 32;
+        var y = 35;
         if ($(window).width() <= 1200) {
             var h = $(".img1").css("height");
             if(h === "0px"){
@@ -15,6 +16,7 @@ $(document).ready(function() {
             }
 
             x -= (1200 - $(window).width()) * (17 / 789);
+            y -= (1200 - $(window).width()) * (2 / 1789);
 
             if ($(window).width() === 1200){
                 x = 32;
@@ -29,6 +31,13 @@ $(document).ready(function() {
             $(".projects").css("font-size", x - 3);
             $("h2").css("font-size", x + 5);
             hs.push(h);
+            $("#down_arrow").css({
+                "width": y,
+                "height": y,
+                "margin":0,
+                "position":"relative",
+                "top": y
+            });
 
         }
         else{
@@ -43,6 +52,12 @@ $(document).ready(function() {
             $(".projects").css("font-size", 20);
             $("h2").css("font-size", "2em");
             $(".carousel").css("padding-top", 50);
+            $("#down_arrow").css({
+                "width": 75,
+                "height": 75,
+                "position":"relative",
+                "top": 0
+            })
         }
     }
 
