@@ -68,6 +68,30 @@ h1{
     top: 300px;
     float:left;
 }
+.cimage{
+    position: relative;
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+
+}
+.row {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    gap: 4px;
+    grid-auto-flow: column;
+
+}
+
+
+.column {
+    flex: 50%;
+    padding: 10px;
+
+}
+
 .jumbotron1{
     height: 100%;
     background-size:cover!important;
@@ -119,6 +143,9 @@ h1{
     display:table-cell;
     vertical-align: middle;
     text-align:center;
+}
+.work{
+
 }
 
 .item {

@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
 
-    /*var hs = [];
+    var hs = [];
     function setHeight(){
         var x = 32;
         var y = 35;
@@ -50,7 +50,7 @@ $(document).ready(function() {
             $(".carousel").css("padding-top", 50);
 
         }
-    }*/
+    }
 
     function recall_menu(){
         if($(window).width() <= 768){
