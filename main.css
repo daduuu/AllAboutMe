@@ -35,6 +35,8 @@ h1{
 }
 .container1 {
     position: relative;
+    bottom: 600px;
+    padding: 0 0 100px 0;
     text-align: center;
     color: white;
 }
@@ -58,14 +60,16 @@ h1{
 #down_arrow{
     width: 75px;
     height: 75px;
+    position: relative;
+    top: 300px
 }
 .jumbotron1{
-    background-size:auto!important;
+    background-size:cover!important;
     background-repeat:no-repeat;
     background-position: center top;
     background-color:transparent !important;
     color: white !important;
-    padding: 50px 0 0 0 !important;
+    padding: 1100px 0 0 0 !important;
     margin: 0 !important;
 }
 .link{
@@ -146,6 +150,16 @@ h1{
 }
 .sec1{
     margin: 0;
+
+}
+.parallax{
+    height: 100%;
+    background-image: url('img/subcode.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .sec2{
     margin: 0;
