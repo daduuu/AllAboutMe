@@ -118,7 +118,7 @@ h1{
     max-width: 100%;
     height: auto;
     background-size: cover; !important;
-    background: transparent url("./img/wb2.png") !important;
+    background-color:white !important;
     color: black !important;
     padding:50px 0 225px 0 !important;
     margin: 0 !important;
@@ -155,4 +155,87 @@ h1{
 }
 .sec4{
     margin: 0;
+}
+
+.smooth {
+
+}
+.smooth_element{
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.smooth_element--fadein{
+    animation-name: fadeIn;
+}
+
+
+
+
+
+
+
+
+
+
+
+#type2{
+    text-align: center;
+    font-size: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeIn ease 1.9s 3.4s 1 normal both;
+}
+#type1 {
+    font-size: 60px;
+    border-right: solid 3.3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(50, end) .2s 1 normal both,
+    cursor 610ms steps(50, end) infinite;
+}
+
+@keyframes typing{
+    from{width: 0;}
+    to{width: 672px;}
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes cursor{
+    from, to { border-color: transparent }
+    50% { border-color: green; }
 }
