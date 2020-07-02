@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.smoothState.js"></script>
     <script src="js/gtag.js"></script>
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
@@ -18,6 +19,7 @@
     <script src="js/main.js"></script>
     <title>David Du | Student Developer</title>
 
+
     <div id="nav1">
         <nav class="navbar navbar-expand-sm bg-color navbar-dark fixed-top" >
 
@@ -25,79 +27,147 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav2">
-                <a class="navbar-brand" href="#">Quick Shortcuts</a>
-                <ul class="navbar-nav">
+                <a class="navbar-brand" href="#">Student Developer</a>
+
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html#sec1">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#sec2">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sec3">Projects</a>
+                        <a class="nav-link" href="index.html#work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sec4">Resume</a>
+                        <a class="nav-link" href="index.html#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sec4">Contact Me</a>
+                        <a class="nav-link" href="index.html#sec4">Contact Me</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 </head>
-
 <body>
 <div class="smooth" id="main">
     <div class=" smooth smooth_element smooth_element--fadein">
-        <section id="sec3">
-            <div class="jumbotron jumbotron3">
-                <h1 class="hp ppa">Projects</h1>
+        <section id="my_projects">
+            <div class="jumbotron jumbotron6 parallax2">
+                <h1 style="padding-bottom: 50px">My Projects</h1>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h2>BCA GPA 4.0 <a href="https://github.com/daduuu/bcagpa4.0">
-                                <img src="img/link.png" alt="Github Link" class="link">
-                            </a></h2>
 
-                            <p class="projects">BCA GPA is the new and improved version of BCA GPA. Now you can calculate what your grades/GPA will be after you input a grade. BCA GPA incorporates HTML, CSS, Javascript, and Javascript libraries such as jQuery and ajax. It is still a WIP but I, along with my team, will be working on making fully functional product.  </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <h2>Discrete Calculator <a href="https://github.com/daduuu/discrete_calculator">
+
+                    <div class="row">
+
+                        <div class="col-sm-5">
+                            <h2> AllAboutMe <a target="_blank" href="https://github.com/daduuu/AllAboutMe">
                                 <img src="img/link.png" alt="Github Link" class="link">
                             </a></h2>
-                            <p class="projects">Discrete Calculator is a Java-based calculator which is capable of complex computations. Not only can it perform the four basic functions, it can perform them with the addition of variables, because of the primitive CAS system implementation. It can also show basic graph data and calculate values of certain functions. It also has the capability to create and manipulate vectors and to load basic shapes. This is a WIP </p>
+                            <p class="projects">The code for this website!</p>
+
                         </div>
+                        <div class="col-sm-2">
+
+                        </div>
+                        <div class="col-sm-5">
+                            <h2> Hanoi_The_N_Towers  <a target="_blank" href="https://github.com/daduuuu/collection_of_algorithms/blob/master/hanoi.cpp">
+                                <img src="img/link.png" alt="Github Link" class="link">
+                            </a></h2>
+                            <p class="projects">A project to implement the currently unproven solution to the problem of the towers of Hanoi, with there being n towers. Uses DP and recursion to implement the solution where you find k optimal towers to move to the next tower, then move the rest.</p>
+
+                        </div>
+
+
+
                     </div>
                     <div class="row">
-                        <div class="col-sm-6">
+
+
+
+                        <div class="col-sm-5">
+                            <h2> Floyd's Algorithm  <a target="_blank" href="https://github.com/daduuuu/collection_of_algorithms/blob/master/floyd.cpp">
+                                <img src="img/link.png" alt="Github Link" class="link">
+                            </a></h2>
+                            <p class="projects">A project to determine if a linked list has a cycle, when does that cycle start, and how long the cycle is using a fast pointer and a slow pointer, Floyd’s algorithm</p>
+
+                        </div>
+                        <div class="col-sm-2">
+
+                        </div>
+
+                        <div class="col-sm-5">
+                            <h2> 2sat <a target="_blank" href="https://github.com/daduuuu/collection_of_algorithms/blob/master/2sat.cpp">
+                                <img src="img/link.png" alt="Github Link" class="link">
+                            </a></h2>
+                            <p class="projects">Code to determine if a boolean statement is satisfiable, specifically one in conjunctive normal form with each clause a disjunction with 2 variables which can be negated if so chosen. Uses strongly connected component method developed by Kosaraju in order to solve the problem, specifically determining the condensation of the strongly connected components then reverse topologically sorting, assigning truth values and seeing if it is satisfiable, then printing the truth values of the the variables if satisfiable in O(n) time.</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-5">
+                            <h2> Josepheus  <a target="_blank" href=https://github.com/daduuuu/collection_of_algorithms/blob/master/josephus.cpp">
+                                <img src="img/link.png" alt="Github Link" class="link">
+                            </a></h2>
+                            <p class="projects">A small project to see who survives in the classic Josephus problem, where every k person dies. Utilises a circular linked list</p>
+
+                        </div>
+                        <div class="col-sm-2">
+
+                        </div>
+                        <div class="col-sm-5">
+                            <h2> Tetrominoes_placer_2d  <a target="_blank" href=https://github.com/daduuuu/collection_of_algorithms/blob/master/tetrominoes_placer_2d.cpp">
+                                <img src="img/link.png" alt="Github Link" class="link">
+                            </a></h2>
+                            <p class="projects">Tetrominoes_placer_2d is to find if tetrominoes can be placed on a x by y board using “dancing links” from Knuth</p>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2> Median_of_3_quicksort  <a target="_blank" href="https://github.com/daduuuu/collection_of_algorithms/blob/master/median_of_3_quicksort.cpp">
+                                <img src="img/link.png" alt="Github Link" class="link">
+                            </a></h2>
+                            <p class="projects">A small project to implement the median_of_3 quick sort method</p>
+
+                        </div>
+                        <div class="col-sm-2">
+
+                        </div>
+                        <div class="col-sm-5">
                             <h2>Number Theory Functions <a href="https://github.com/daduuu/Number_Theory_Functions">
                                 <img src="img/link.png" alt="Github Link" class="link">
                             </a></h2>
                             <p class="projects">This project is to create software for the evaluation of basic number theory functions. It will be written in C++ and Java. WIP </p>
                         </div>
-                        <div class="col-sm-6">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
                             <h2>Notes<a href="https://drive.google.com/open?id=1RoMTDjVUJIOazNQISTGxX8o-LJstQClr">
                                 <img src="img/link.png" alt="Github Link" class="link">
                             </a></h2>
-                            <p class="projects">This is my repository for math and physics notes I have written in LaTeX. </p>
+                            <p class="projects">This is my repository for math  I have written in LaTeX. </p>
+                        </div>
+                        <div class="col-sm-2">
+
+                        </div>
+                        <div class="col-sm-5">
                         </div>
                     </div>
-                    <!-- <div class="row">
-                        <div class="col-sm-6">
-                            <h2>Web Cal <a href="https://github.com/daduuu/webcal">
-                                <img src="img/link.png" alt="Github Link" class="link">
-                            </a></h2>
-                            <p class="projects">WIP online calculator...</p>
-                        </div>
-                    </div>
-                    </div> -->
                 </div>
             </div>
         </section>
     </div>
 </div>
+
 
 
 </body>

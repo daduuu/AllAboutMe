@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+body{
+    text-align: center;
+    position: relative;
+    font-family: 'Cormorant Garamond', serif;
+}
+h1{
+    padding-top: 50px;
+}
+
+.cen {
+    text-align: center;
+}
+
+.navbar{
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+.link{
+    width: 15px;
+    height: 15px;
+}
+.projects{
+    text-align: justify;
+    font-size: 20px;
+}
+.parallax2{
+    opacity: 98%;
+    background-image: url("../img/wooddark.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    min-height: 300px;
+    max-width: 100%;
+
+}
+.jumbotron6{
+    height: 100%;
+    background-size:cover!important;
+    background-repeat:no-repeat;
+    background-position: center top;
+    max-width:100% !important;
+    color: white !important;
+    margin: 0 !important;
+}
+
+
+.smooth {
+
+}
+.smooth_element{
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+.smooth_element--fadein{
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
