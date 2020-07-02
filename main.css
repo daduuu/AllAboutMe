@@ -46,6 +46,11 @@ h1{
     opacity: 1;
     right: 0;
 }
+
+.buttonProject:focus {
+    outline: none;
+    box-shadow: none;
+}
 /*
 .carousel{
     max-width: 100%;
@@ -203,12 +208,17 @@ h1{
 
 }
 
+.progress_bar{
+    width:50%;
+    position: relative;
+    top: 10px;
+}
 .item {
     position:relative;
 }
 .portrait{
     position: relative;
-    
+
     left: 150px;
     top: 50px;
     width: 363px;
@@ -222,9 +232,10 @@ h1{
     background-size: cover; !important;
     background-color: white !important;
     color: black !important;
-    padding:50px 0 100px 0 !important;
+    padding:50px 0 200px 0 !important;
     margin: 0 !important;
 }
+
 .jumbotron2{
     max-width: 100%;
     height: auto;
@@ -249,8 +260,8 @@ h1{
 .jumbotron4{
     max-width: 100%;
     height: auto;
-    background-color:white !important;
-    color: black !important;
+    background-color:#f0f0f0 !important;
+    color: white !important;
     background-size: cover !important;
     padding:50px 0 250px 0 !important;
     margin: 0 !important;
@@ -258,6 +269,48 @@ h1{
 .sec1{
     margin: 0;
 
+}
+.buttonResume {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 320px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonResume:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.buttonResume span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonResume span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonResume:hover span {
+    padding-right: 25px;
+}
+
+.buttonResume:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 .parallax{
 
@@ -369,4 +422,11 @@ h1{
 @keyframes cursor{
     from, to { border-color: transparent }
     50% { border-color: green; }
+}
+
+.contact_images{
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    margin: 0 20px 0 20px;
 }
