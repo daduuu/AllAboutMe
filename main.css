@@ -167,7 +167,7 @@ h1{
     font-size: 20px;
 }
 .hp{
-    font-size: 60px;
+    font-size: 2vw;
 }
 .hp1{
     font-size: 2.5em;
@@ -321,6 +321,7 @@ h1{
     background-size: cover;
 
     height: 100%;
+    min-width: 300px;
     min-height: 300px;
     max-width: 100%;
 
@@ -360,7 +361,7 @@ h1{
 
 #type2{
     text-align: center;
-    font-size: 32px;
+    font-size: 1.57vw;
     white-space: nowrap;
     overflow: hidden;
     white-space: nowrap;
@@ -368,23 +369,18 @@ h1{
     animation: fadeIn ease 1.9s 3.4s 1 normal both;
 }
 #type1 {
-    font-size: 60px;
+    font-size: 2.94vw;
     border-right: solid 3.3px rgba(0,255,0,.75);
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s steps(50, end) .2s 1 normal both,
     cursor 610ms steps(50, end) infinite;
 }
-#type3 {
-    font-size: 60px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 3s steps(50, end) .2s 1 normal both;
-}
+
 
 @keyframes typing{
     from{width: 0;}
-    to{width: 672px;}
+    to{width: 32.95vw;}
 }
 @keyframes fadeIn {
     0% {

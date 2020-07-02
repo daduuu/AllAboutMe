@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    window.addEventListener('resize', setHeight);
+   /* window.addEventListener('resize', setHeight);
     //$('#c1').on('slide.bs.carousel', setHeight);
     $('.nav-link').on('click', recall_menu);
 
@@ -24,7 +24,6 @@ $(document).ready(function() {
                 x = 32;
             }
 
-            $(".carousel").css("height", "auto");
             $(".img1").css("height", "auto");
             $(".img2").css("height", h);
             $("h1").css("font-size", x + 10);
@@ -36,9 +35,8 @@ $(document).ready(function() {
 
 
         }
-        else{
+        else if ($(window).width() <= 1200){
 
-            $(".carousel").css("height", 730);
             $(".img1").css("height", 730);
             $(".img2").css("height", 730);
             $(".hp").css("font-size", 60);
@@ -50,7 +48,7 @@ $(document).ready(function() {
             $(".carousel").css("padding-top", 50);
 
         }
-    }
+    }*/
 
     function recall_menu(){
         if($(window).width() <= 768){
