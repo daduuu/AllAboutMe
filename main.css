@@ -208,9 +208,10 @@ h1{
 }
 .portrait{
     position: relative;
+    
     left: 150px;
     top: 50px;
-    width: 400px;
+    width: 363px;
     height: 400px;
     max-width: 100%;
     border-radius: 25px;
